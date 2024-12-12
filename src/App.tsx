@@ -9,6 +9,8 @@ import Admin from "./pages/Admin";
 import FlashNews from "./pages/FlashNews";
 import Tourism from "./pages/Tourism";
 import MeetMayor from "./pages/MeetMayor";
+import Partners from "./pages/Partners";
+import Council from "./pages/Council";
 
 const App = () => (
   <ErrorBoundary>
@@ -23,6 +25,8 @@ const App = () => (
             <Route path="/flash-news" element={<FlashNews />} />
             <Route path="/visitors/tourism" element={<Tourism />} />
             <Route path="/government/meet-mayor" element={<MeetMayor />} />
+            <Route path="/government/partners" element={<Partners />} />
+            <Route path="/government/council" element={<Council />} />
           </Routes>
         </BrowserRouter>
       </TooltipProvider>
