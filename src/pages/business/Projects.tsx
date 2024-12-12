@@ -2,7 +2,7 @@ import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
-import { Building2, TreePine, Road, Hospital, School } from "lucide-react";
+import { Building2, TreePine, RoadSign, Hospital, School } from "lucide-react";
 
 const Projects = () => {
   const projects = [
@@ -31,7 +31,7 @@ const Projects = () => {
       progress: 20,
       budget: "300 millions FCFA",
       duration: "2024-2025",
-      icon: <Road className="h-6 w-6 text-cameroon-yellow" />
+      icon: <RoadSign className="h-6 w-6 text-cameroon-yellow" />
     },
     {
       title: "Centre de Santé Moderne",
