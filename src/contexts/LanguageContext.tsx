@@ -45,6 +45,8 @@ const translations = {
     "poi.email": "Email",
     "poi.address": "Address",
     "poi.slogan": "Slogan",
+    "events.title": "Events",
+    "events.viewAll": "View All Events",
   },
   fr: {
     "hero.searchPlaceholder": "Que pouvons-nous vous aider à trouver ?",
@@ -82,6 +84,8 @@ const translations = {
     "poi.email": "Email",
     "poi.address": "Adresse",
     "poi.slogan": "Slogan",
+    "events.title": "Événements",
+    "events.viewAll": "Voir Tous les Événements",
   }
 };
 

@@ -8,42 +8,34 @@ export function Events() {
   const events = [
     {
       id: 1,
-      title: "L5P Holidaze",
-      date: "2024-11-16",
-      time: "12:00 PM - Feb, 03 10:00 PM",
-      month: "NOV",
-      day: "16"
+      title: "Fête de la Jeunesse au Cameroun",
+      date: "2025-02-11",
+      time: "08:00 - 18:00",
+      month: "FÉV",
+      day: "11"
     },
     {
       id: 2,
-      title: "Holiday Vendors Market",
-      date: "2024-12-06",
-      time: "01:00 PM - Dec, 08 11:00 PM",
-      month: "DEC",
-      day: "06"
+      title: "Journée internationale des droits des femmes 2025",
+      date: "2025-03-08",
+      time: "09:00 - 17:00",
+      month: "MAR",
+      day: "08"
     },
     {
       id: 3,
-      title: "Winterfest 2024 - Tour of Lights, Jingle Jog & Parade",
-      date: "2024-12-06",
-      time: "05:30 PM - Dec, 07 05:00 PM",
-      month: "DEC",
-      day: "06"
-    },
-    {
-      id: 4,
-      title: "Frankie Beverly and Mays Birthday Concert Tribute",
-      date: "2024-12-06",
-      time: "06:00 PM - Dec, 07",
-      month: "DEC",
-      day: "06"
+      title: "Fête Nationale de l'Unité",
+      date: "2025-05-20",
+      time: "08:00 - 23:00",
+      month: "MAI",
+      day: "20"
     }
   ];
 
   return (
     <section className="py-8 md:py-16 px-4 bg-gray-50">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-2xl md:text-3xl font-bold mb-6 md:mb-8">{t("events.title")}</h2>
+        <h2 className="text-2xl md:text-3xl font-bold mb-6 md:mb-8">Événements</h2>
         
         <div className="space-y-3 md:space-y-4 mb-6 md:mb-8">
           {events.map((event) => (
