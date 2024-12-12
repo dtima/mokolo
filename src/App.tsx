@@ -8,6 +8,7 @@ import Index from "./pages/Index";
 import Admin from "./pages/Admin";
 import FlashNews from "./pages/FlashNews";
 import Tourism from "./pages/Tourism";
+import MeetMayor from "./pages/MeetMayor";
 
 const App = () => (
   <ErrorBoundary>
@@ -21,6 +22,7 @@ const App = () => (
             <Route path="/admin-dtima/*" element={<Admin />} />
             <Route path="/flash-news" element={<FlashNews />} />
             <Route path="/visitors/tourism" element={<Tourism />} />
+            <Route path="/government/meet-mayor" element={<MeetMayor />} />
           </Routes>
         </BrowserRouter>
       </TooltipProvider>

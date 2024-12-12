@@ -13,20 +13,19 @@ export const Footer = () => {
           <div className="space-y-4">
             <h3 className="text-lg md:text-xl font-bold">{t("footer.contact")}</h3>
             <div className="space-y-2">
-              <p className="font-bold text-sm md:text-base">Garoua III City Hall</p>
+              <p className="font-bold text-sm md:text-base">Commune de Mokolo</p>
               <div className="flex items-center gap-2 text-sm md:text-base">
                 <MapPin className="h-4 w-4" />
-                <p>55 Trinity Ave SW</p>
+                <p>B.P. 40, Mokolo</p>
               </div>
               <div className="flex items-center gap-2 text-sm md:text-base">
                 <Phone className="h-4 w-4" />
-                <p>+237 123 456 789</p>
+                <p>620295404/‪+237 6 72 11 77 77</p>
               </div>
-              <div className="flex items-center gap-2 text-sm md:text-base">
-                <Mail className="h-4 w-4" />
-                <p>contact@garoua3.cm</p>
+              <div className="space-y-1 text-sm md:text-base pl-6">
+                <p>Département du Mayo-Tsanaga</p>
+                <p>Région de l'Extrême-Nord, Cameroun</p>
               </div>
-              <p className="text-sm md:text-base">{t("footer.hours")}</p>
             </div>
           </div>
 
