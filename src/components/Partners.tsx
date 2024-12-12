@@ -3,29 +3,29 @@ import { useLanguage } from "@/contexts/LanguageContext";
 export function Partners() {
   const partners = [
     {
-      name: "UNDP",
-      logo: "/lovable-uploads/fcae6ef1-ad37-4ce1-980a-ad7ef7f6d08d.png",
-      description: "United Nations Development Programme"
+      name: "DTIMA",
+      logo: "/lovable-uploads/00de99b1-71e9-44d3-8471-a914b0f39bbf.png",
+      description: "Digital Transformation Initiative for Municipalities in Africa"
     },
     {
-      name: "UNICEF",
-      logo: "/lovable-uploads/88702684-3b0a-4ff0-8ed4-5f2142e0663d.png",
-      description: "United Nations Children's Fund"
+      name: "African Development Bank",
+      logo: "/lovable-uploads/5aa9fe4a-2609-4e4e-b2c4-7250a89dfae2.png",
+      description: "African Development Bank Group"
     },
     {
-      name: "PNDP",
-      logo: "/lovable-uploads/c507beb1-1e47-4c17-a7dc-afd231677186.png",
-      description: "Programme National de Développement Participatif"
+      name: "MINDDEVEL",
+      logo: "/lovable-uploads/bc6ffcdb-447a-46c0-b0ef-2318d030f333.png",
+      description: "Ministère de la Décentralisation et du Développement Local"
     },
     {
-      name: "ISA",
-      logo: "/lovable-uploads/60c309db-bf47-4b66-b36f-df3cab0d0754.png",
-      description: "Impact Santé Afrique"
+      name: "ONU HABITAT",
+      logo: "/lovable-uploads/730f4ba0-adfc-472f-8ed8-70a12eb0ed50.png",
+      description: "Pour un Meilleur Avenir Urbain"
     },
     {
-      name: "Croix Rouge",
-      logo: "/lovable-uploads/29bce7bd-0c32-4c4b-89f2-a4653ff9ab2d.png",
-      description: "Croix Rouge Camerounaise"
+      name: "FEICOM",
+      logo: "/lovable-uploads/44505ac2-7b4b-438c-9a28-4679e94a7612.png",
+      description: "Fonds Spécial d'Équipement et d'Intervention Intercommunale"
     }
   ];
 
@@ -45,7 +45,7 @@ export function Partners() {
                 src={partner.logo}
                 alt={partner.name}
                 className="h-32 w-auto object-contain mx-auto"
-                loading="lazy"
+                loading={index === 0 ? "eager" : "lazy"}
               />
               <h3 className="text-lg font-semibold text-center mt-4">{partner.name}</h3>
               <p className="text-sm text-gray-600 text-center mt-2">{partner.description}</p>

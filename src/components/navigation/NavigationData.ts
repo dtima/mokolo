@@ -4,7 +4,7 @@ export const getNavigationItems = (t: (key: string) => string) => [
     items: [
       { href: "/government/meet-mayor", label: t("nav.meetMayor") },
       { href: "/government/council", label: t("nav.council") },
-      { href: "/government/partner", label: t("nav.partner") },
+      { href: "/government/partners", label: t("nav.partner") },
     ],
   },
   {
