@@ -16,6 +16,9 @@ import GuidePratique from "./pages/GuidePratique";
 import AllEvents from "./pages/AllEvents";
 import InvestmentOpportunities from "./pages/business/InvestmentOpportunities";
 import Tenders from "./pages/business/Tenders";
+import Licenses from "./pages/business/Licenses";
+import Taxes from "./pages/business/Taxes";
+import Projects from "./pages/business/Projects";
 
 const App = () => (
   <ErrorBoundary>
@@ -37,6 +40,9 @@ const App = () => (
             <Route path="/events" element={<AllEvents />} />
             <Route path="/business/investment" element={<InvestmentOpportunities />} />
             <Route path="/business/tenders" element={<Tenders />} />
+            <Route path="/business/licenses" element={<Licenses />} />
+            <Route path="/business/taxes" element={<Taxes />} />
+            <Route path="/business/projects" element={<Projects />} />
           </Routes>
         </BrowserRouter>
       </TooltipProvider>
