@@ -12,6 +12,7 @@ import MeetMayor from "./pages/MeetMayor";
 import Partners from "./pages/Partners";
 import Council from "./pages/Council";
 import PointsOfInterest from "./pages/PointsOfInterest";
+import GuidePratique from "./pages/GuidePratique";
 
 const App = () => (
   <ErrorBoundary>
@@ -29,6 +30,7 @@ const App = () => (
             <Route path="/government/partners" element={<Partners />} />
             <Route path="/government/council" element={<Council />} />
             <Route path="/residents/points-of-interest" element={<PointsOfInterest />} />
+            <Route path="/guide-pratique" element={<GuidePratique />} />
           </Routes>
         </BrowserRouter>
       </TooltipProvider>

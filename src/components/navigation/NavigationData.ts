@@ -16,11 +16,7 @@ export const getNavigationItems = (t: (key: string) => string) => [
   {
     trigger: t("nav.visitors"),
     items: [
-      { href: "/visitors/tourism", label: t("nav.tourism") },
-      { href: "/visitors/hotels", label: t("nav.hotels") },
-      { href: "/visitors/restaurants", label: t("nav.restaurants") },
-      { href: "/visitors/attractions", label: t("nav.attractions") },
-      { href: "/visitors/events", label: t("nav.events") },
+      { href: "/guide-pratique", label: t("nav.guidePratique") },
     ],
   },
   {
