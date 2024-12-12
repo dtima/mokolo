@@ -62,7 +62,7 @@ export function RotatingPartners() {
       setCurrentIndex((prevIndex) => 
         prevIndex + 3 >= partners.length ? 0 : prevIndex + 3
       );
-    }, 5000);
+    }, 4000); // Changed to 4 seconds as requested
 
     return () => clearInterval(timer);
   }, [partners.length]);
