@@ -14,6 +14,8 @@ import Council from "./pages/Council";
 import PointsOfInterest from "./pages/PointsOfInterest";
 import GuidePratique from "./pages/GuidePratique";
 import AllEvents from "./pages/AllEvents";
+import InvestmentOpportunities from "./pages/business/InvestmentOpportunities";
+import Tenders from "./pages/business/Tenders";
 
 const App = () => (
   <ErrorBoundary>
@@ -33,6 +35,8 @@ const App = () => (
             <Route path="/residents/points-of-interest" element={<PointsOfInterest />} />
             <Route path="/guide-pratique" element={<GuidePratique />} />
             <Route path="/events" element={<AllEvents />} />
+            <Route path="/business/investment" element={<InvestmentOpportunities />} />
+            <Route path="/business/tenders" element={<Tenders />} />
           </Routes>
         </BrowserRouter>
       </TooltipProvider>
