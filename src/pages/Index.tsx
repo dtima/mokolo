@@ -4,7 +4,7 @@ import { QuickLinks } from "@/components/QuickLinks";
 import { InvestmentOpportunities } from "@/components/InvestmentOpportunities";
 import { Events } from "@/components/Events";
 import { MayorNote } from "@/components/MayorNote";
-import { Partners } from "@/components/Partners";
+import { RotatingPartners } from "@/components/RotatingPartners";
 import { Footer } from "@/components/Footer";
 import ChatBot from "@/components/ChatBot";
 import { FlashNewsCarousel } from "@/components/FlashNewsCarousel";
@@ -21,7 +21,7 @@ const Index = () => {
       <FlashNewsCarousel />
       <Events />
       <MayorNote />
-      <Partners />
+      <RotatingPartners />
       <Footer />
       <ChatBot />
     </div>
