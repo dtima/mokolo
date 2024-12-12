@@ -10,12 +10,6 @@ export const getNavigationItems = (t: (key: string) => string) => [
   {
     trigger: t("nav.residents"),
     items: [
-      { href: "/residents/education", label: t("nav.education") },
-      { href: "/residents/health", label: t("nav.health") },
-      { href: "/residents/social-affairs", label: t("nav.socialAffairs") },
-      { href: "/residents/culture", label: t("nav.culture") },
-      { href: "/residents/sports", label: t("nav.sports") },
-      { href: "/residents/markets", label: t("nav.markets") },
       { href: "/residents/points-of-interest", label: t("nav.pointsOfInterest") },
     ],
   },
