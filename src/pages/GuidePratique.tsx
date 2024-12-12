@@ -1,7 +1,7 @@
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { MapPin, Hotel, Restaurant, Camera, Calendar } from "lucide-react";
+import { MapPin, Hotel, Utensils, Camera, Calendar } from "lucide-react";
 
 const GuidePratique = () => {
   const categories = [
@@ -46,7 +46,7 @@ const GuidePratique = () => {
     {
       id: "restaurants",
       title: "Restaurants",
-      icon: <Restaurant className="h-5 w-5" />,
+      icon: <Utensils className="h-5 w-5" />,
       items: [
         {
           name: "Restaurant Le Kapsiki",
