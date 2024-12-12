@@ -20,7 +20,7 @@ export function Hero() {
       {/* Content */}
       <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 animate-fade-in max-w-4xl mx-auto">
         <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 md:mb-6">
-          Bienvenue à la Commune de Mokolo
+          Bienvenue dans la Commune de Mokolo
         </h1>
         
         {/* Search Bar */}

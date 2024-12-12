@@ -31,26 +31,16 @@ export const Footer = () => {
 
           {/* Quick Links */}
           <div className="space-y-4">
-            <h3 className="text-lg md:text-xl font-bold">{t("footer.quickLinks")}</h3>
+            <h3 className="text-lg md:text-xl font-bold">Accès Rapide</h3>
             <ul className="space-y-2 text-sm md:text-base">
-              <li><a href="#government" className="hover:underline">{t("nav.government")}</a></li>
-              <li><a href="#residents" className="hover:underline">{t("nav.residents")}</a></li>
-              <li><a href="#visitors" className="hover:underline">{t("nav.visitors")}</a></li>
-              <li><a href="#business" className="hover:underline">{t("nav.business")}</a></li>
-              <li><a href="#taskforce" className="hover:underline">{t("footer.taskForce")}</a></li>
-              <li><a href="#iwantto" className="hover:underline">{t("nav.iwantto")}</a></li>
-              <li><a href="/reports" className="hover:underline">{t("footer.reports")}</a></li>
+              <li><a href="#council" className="hover:underline">Conseil Municipal</a></li>
+              <li><a href="#partners" className="hover:underline">Partenaires</a></li>
+              <li><a href="#health" className="hover:underline">Services de Santé</a></li>
+              <li><a href="#social" className="hover:underline">Affaires Sociales</a></li>
+              <li><a href="/visitors/tourism" className="hover:underline">Tourisme</a></li>
+              <li><a href="#projects" className="hover:underline">Projets de Développement</a></li>
+              <li><a href="#tenders" className="hover:underline">Appels d'Offres</a></li>
             </ul>
-          </div>
-
-          {/* City Details */}
-          <div className="space-y-4">
-            <h3 className="text-lg md:text-xl font-bold">{t("footer.cityDetails")}</h3>
-            <p className="text-sm md:text-base">{t("footer.incorporated")}</p>
-            <div className="space-y-2 text-sm md:text-base">
-              <p>{t("footer.population")}</p>
-              <p>{t("footer.area")}</p>
-            </div>
           </div>
 
           {/* Social Media */}
@@ -71,15 +61,23 @@ export const Footer = () => {
               </a>
             </div>
           </div>
+
+          {/* Fraud Report */}
+          <div className="space-y-4">
+            <h3 className="text-lg md:text-xl font-bold">Signalement</h3>
+            <p className="text-sm md:text-base">
+              Vous soupçonnez une fraude municipale, un gaspillage ou un abus ? Signalez-le au bureau de l'inspecteur général de la commune.
+            </p>
+          </div>
         </div>
 
         <Separator className="my-6 md:my-8 bg-white/20" />
 
         <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0 text-sm">
-          <p>{t("footer.fraudReport")}</p>
-          <p>{t("footer.credits")}</p>
+          <p>2025 © Commune de Mokolo</p>
+          <p>Website Designed by DTIMA – Connecting People & Government</p>
         </div>
       </div>
     </footer>
   );
-};
+}

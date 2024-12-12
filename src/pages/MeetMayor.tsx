@@ -8,20 +8,20 @@ export default function MeetMayor() {
   return (
     <div className="min-h-screen bg-white">
       <Navigation />
-      <main className="container mx-auto px-4 py-8 mt-16">
+      <main className="container mx-auto px-4 pt-24 pb-8 md:pt-28">
         <div className="max-w-4xl mx-auto">
           <div className="flex flex-col items-center mb-8">
             <img
               src="/lovable-uploads/537b547b-0444-4b96-9820-fc8585714567.png"
               alt="Dr VOHOD DEGUIME"
-              className="w-64 h-64 object-cover rounded-full mb-6"
+              className="w-48 h-48 md:w-64 md:h-64 object-cover rounded-full mb-6"
             />
-            <h1 className="text-3xl font-bold mb-2">Dr VOHOD DEGUIME</h1>
-            <p className="text-xl text-gray-600 mb-8">Maire de la Commune de Mokolo</p>
+            <h1 className="text-2xl md:text-3xl font-bold mb-2 text-center">Dr VOHOD DEGUIME</h1>
+            <p className="text-lg md:text-xl text-gray-600 mb-8 text-center">Maire de la Commune de Mokolo</p>
           </div>
 
           <div className="prose max-w-none">
-            <h2 className="text-2xl font-bold mb-4">Message du Maire</h2>
+            <h2 className="text-xl md:text-2xl font-bold mb-4">Message du Maire</h2>
             <div className="space-y-4 text-gray-700">
               <p>
                 Chers concitoyens, chers visiteurs,
