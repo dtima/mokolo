@@ -28,12 +28,20 @@ export function MayorNote() {
               pour le développement socio-économique de Mokolo. Son leadership est marqué par un engagement profond envers 
               l'amélioration des conditions de vie des populations et la modernisation des infrastructures municipales.
             </p>
-            <Button 
-              className="mt-4 md:mt-6 bg-cameroon-green hover:bg-cameroon-green/90 text-sm md:text-base"
-              onClick={() => navigate("/government/meet-mayor")}
-            >
-              Rencontrer le Maire
-            </Button>
+            <div className="flex flex-wrap gap-4">
+              <Button 
+                className="bg-cameroon-green hover:bg-cameroon-green/90 text-sm md:text-base"
+                onClick={() => navigate("/government/meet-mayor")}
+              >
+                Rencontrer le Maire
+              </Button>
+              <Button 
+                className="bg-cameroon-red hover:bg-cameroon-red/90 text-sm md:text-base"
+                onClick={() => navigate("/government/biography")}
+              >
+                Biographie
+              </Button>
+            </div>
           </div>
         </div>
       </div>

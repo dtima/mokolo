@@ -9,6 +9,7 @@ import Admin from "./pages/Admin";
 import FlashNews from "./pages/FlashNews";
 import Tourism from "./pages/Tourism";
 import MeetMayor from "./pages/MeetMayor";
+import Biography from "./pages/government/Biography";
 import Partners from "./pages/Partners";
 import Council from "./pages/Council";
 import PointsOfInterest from "./pages/PointsOfInterest";
@@ -33,6 +34,7 @@ const App = () => (
             <Route path="/flash-news" element={<FlashNews />} />
             <Route path="/visitors/tourism" element={<Tourism />} />
             <Route path="/government/meet-mayor" element={<MeetMayor />} />
+            <Route path="/government/biography" element={<Biography />} />
             <Route path="/government/partners" element={<Partners />} />
             <Route path="/government/council" element={<Council />} />
             <Route path="/residents/points-of-interest" element={<PointsOfInterest />} />
