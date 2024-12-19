@@ -1,111 +1,100 @@
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { MapPin, Hotel, Utensils, Camera, Calendar } from "lucide-react";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { MapPin, Hotel, Utensils, Camera, Calendar, Mountain, TreePine, Building2, Landmark } from "lucide-react";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 const GuidePratique = () => {
-  const categories = [
+  const touristSites = [
     {
-      id: "tourism",
-      title: "Tourisme",
-      icon: <MapPin className="h-5 w-5" />,
-      items: [
+      category: "Montagnes et Sites Naturels",
+      icon: <Mountain className="h-5 w-5" />,
+      sites: [
         {
-          name: "Office de Tourisme de Mokolo",
-          description: "Centre d'information touristique officiel",
-          address: "Centre-ville, Mokolo",
-          contact: "+237 6XX XXX XXX",
+          name: "Montagne de Ziver",
+          description: "Une montagne transformée en une boule de pierre par l'érosion, offrant une vue panoramique sur le village et un lieu de traditions intactes.",
+          location: "Située à une dizaine de km de Mokolo",
+          classification: "Site d'intérêt local",
+          amenagement: "Délimitation et sécurisation nécessaires"
         },
         {
-          name: "Agence de Voyage Mandara",
-          description: "Organisation de circuits touristiques",
-          address: "Quartier Commercial, Mokolo",
-          contact: "+237 6XX XXX XXX",
+          name: "Mont Houmpla",
+          description: "Une montagne qui fait la beauté des paysages naturels Kapsiki",
+          location: "Situé dans l'arrondissement de Mogodé",
+          classification: "Site d'intérêt local",
+          amenagement: "Doit être aménagé et préservé"
         },
-      ],
+        {
+          name: "Montagne Semron",
+          description: "Montagne mystique d'après les autochtones avec des traditions particulières",
+          location: "Située à Gawar dans le village mouftoum",
+          classification: "Non aménagé et nécessite une conservation",
+          amenagement: "À intégrer dans le circuit touristique"
+        }
+      ]
     },
     {
-      id: "hotels",
-      title: "Hôtels et Hébergement",
-      icon: <Hotel className="h-5 w-5" />,
-      items: [
+      category: "Sites Culturels et Historiques",
+      icon: <Landmark className="h-5 w-5" />,
+      sites: [
         {
-          name: "Hôtel Mont Mandara",
-          description: "Hôtel 3 étoiles avec restaurant",
-          address: "Route Principale, Mokolo",
-          contact: "+237 6XX XXX XXX",
+          name: "Musée d'art royal de Mokolo",
+          description: "Siège de la culture des autochtones, grenier de la tradition locale qui regorge les traces de la civilisation des peuples montagnards.",
+          location: "Il se trouve à la chefferie de Mokolo",
+          classification: "Site d'intérêt national",
+          amenagement: "Lieu aménagé et plein de symboles"
         },
         {
-          name: "Auberge du Voyageur",
-          description: "Hébergement confortable et abordable",
-          address: "Quartier Résidentiel, Mokolo",
-          contact: "+237 6XX XXX XXX",
-        },
-      ],
+          name: "Site culturel de Gudur",
+          description: "Important site culturel qui révèle les us et coutumes de la population autochtones",
+          location: "Situé dans la plaine à quelques Km de Mokolo",
+          classification: "Site d'intérêt Régional",
+          amenagement: "Nécessite un aménagement et une reconstitution"
+        }
+      ]
     },
     {
-      id: "restaurants",
-      title: "Restaurants",
-      icon: <Utensils className="h-5 w-5" />,
-      items: [
+      category: "Points d'eau et Barrages",
+      icon: <Building2 className="h-5 w-5" />,
+      sites: [
         {
-          name: "Restaurant Le Kapsiki",
-          description: "Cuisine traditionnelle camerounaise",
-          address: "Centre-ville, Mokolo",
-          contact: "+237 6XX XXX XXX",
+          name: "Barrage de Woudahai",
+          description: "Une réalisation du premier Président qui ravitaille les populations de la zone des monts Mandara. Une curiosité touristique où l'eau est rare et vitale.",
+          location: "Situé à 7km de la ville de Mokolo",
+          classification: "Site d'intérêt régional",
+          amenagement: "Aménagé et accessible en toute saison"
         },
         {
-          name: "La Terrasse de Mokolo",
-          description: "Restaurant avec vue panoramique",
-          address: "Quartier Commercial, Mokolo",
-          contact: "+237 6XX XXX XXX",
-        },
-      ],
+          name: "Mare aux crocodiles de zingos",
+          description: "Un lac aux crocodiles dont l'histoire est rattachée à la civilisation locale",
+          location: "Situé dans le canton de Mokong",
+          classification: "Site d'intérêt local",
+          amenagement: "Doit être classé, aménagé et sécurisé"
+        }
+      ]
     },
     {
-      id: "attractions",
-      title: "Sites Touristiques",
-      icon: <Camera className="h-5 w-5" />,
-      items: [
+      category: "Paysages Remarquables",
+      icon: <TreePine className="h-5 w-5" />,
+      sites: [
         {
-          name: "Monts Mandara",
-          description: "Paysages montagneux spectaculaires",
-          address: "Région de Mokolo",
-          contact: "Guide local: +237 6XX XXX XXX",
+          name: "Paysage lunaire des kapsiki",
+          description: "Qualifié par l'explorateur André GIDE d'un des plus beaux paysages du monde avec ses pics en forme de champignons sur un plateau.",
+          location: "Situé à 20km au sud de Mokolo",
+          classification: "Site d'intérêt régional",
+          amenagement: "Site touristique à préserver absolument"
         },
         {
-          name: "Village Traditionnel Kapsiki",
-          description: "Découverte de la culture locale",
-          address: "15km de Mokolo",
-          contact: "Chef du village: +237 6XX XXX XXX",
-        },
-      ],
-    },
-    {
-      id: "events",
-      title: "Événements",
-      icon: <Calendar className="h-5 w-5" />,
-      items: [
-        {
-          name: "Fête de la Jeunesse au Cameroun",
-          description: "Célébration nationale",
-          date: "Mardi 11 février 2025",
-          location: "Place des Fêtes, Mokolo",
-        },
-        {
-          name: "Journée internationale des droits des femmes",
-          description: "Célébration internationale",
-          date: "Samedi 8 mars 2025",
-          location: "Centre culturel de Mokolo",
-        },
-        {
-          name: "Fête Nationale de l'Unité",
-          description: "Célébration nationale",
-          date: "20 mai 2025",
-          location: "Place des Fêtes, Mokolo",
-        },
-      ],
-    },
+          name: "L'héliport",
+          description: "Une plateforme qui regorge pleine d'histoire et des souvenirs, offrant une magnifique vue sur la ville de Mokolo.",
+          location: "Se situe à Mofolé, arrondissement de Mokolo",
+          classification: "Site d'intérêt national",
+          amenagement: "Nécessite des aménagements et une conservation"
+        }
+      ]
+    }
   ];
 
   return (
@@ -117,7 +106,8 @@ const GuidePratique = () => {
           Découvrez les services touristiques et les attractions de Mokolo
         </p>
 
-        <Accordion type="single" collapsible className="w-full space-y-4">
+        {/* Existing Accordion content */}
+        <Accordion type="single" collapsible className="w-full space-y-4 mb-12">
           {categories.map((category) => (
             <AccordionItem
               key={category.id}
@@ -169,6 +159,43 @@ const GuidePratique = () => {
             </AccordionItem>
           ))}
         </Accordion>
+
+        {/* Tourist Sites Section */}
+        <section className="mt-12">
+          <h2 className="text-2xl font-bold mb-6">Sites Touristiques</h2>
+          <div className="grid gap-6">
+            {touristSites.map((category, index) => (
+              <Card key={index}>
+                <CardHeader>
+                  <div className="flex items-center gap-2">
+                    {category.icon}
+                    <CardTitle>{category.category}</CardTitle>
+                  </div>
+                </CardHeader>
+                <CardContent>
+                  <div className="grid gap-4">
+                    {category.sites.map((site, siteIndex) => (
+                      <div key={siteIndex} className="bg-gray-50 rounded-lg p-4">
+                        <div className="flex items-start justify-between mb-2">
+                          <h3 className="font-semibold text-lg">{site.name}</h3>
+                          <Badge variant="outline">{site.classification}</Badge>
+                        </div>
+                        <p className="text-gray-600 mb-3">{site.description}</p>
+                        <div className="flex items-center gap-2 text-sm text-gray-500">
+                          <MapPin className="h-4 w-4" />
+                          <span>{site.location}</span>
+                        </div>
+                        <div className="mt-2 text-sm text-gray-500 italic">
+                          État: {site.amenagement}
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </section>
       </main>
       <Footer />
     </div>
