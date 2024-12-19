@@ -1,10 +1,26 @@
-import { Hotel, Utensils, Camera, Calendar, MapPin } from "lucide-react";
+import { LucideIcon } from "lucide-react";
 
-export const categories = [
+export type CategoryItem = {
+  name: string;
+  description?: string;
+  address?: string;
+  contact?: string;
+  date?: string;
+  location?: string;
+};
+
+export type Category = {
+  id: string;
+  title: string;
+  iconName: "hotel" | "utensils" | "camera" | "calendar";
+  items: CategoryItem[];
+};
+
+export const categories: Category[] = [
   {
     id: "hotels",
     title: "Hôtels et Hébergement",
-    icon: <Hotel className="h-5 w-5" />,
+    iconName: "hotel",
     items: [
       {
         name: "Hôtel de la Paix",
@@ -23,7 +39,7 @@ export const categories = [
   {
     id: "restaurants",
     title: "Restaurants",
-    icon: <Utensils className="h-5 w-5" />,
+    iconName: "utensils",
     items: [
       {
         name: "Restaurant Le Terroir",
@@ -36,7 +52,7 @@ export const categories = [
   {
     id: "attractions",
     title: "Attractions Touristiques",
-    icon: <Camera className="h-5 w-5" />,
+    iconName: "camera",
     items: [
       {
         name: "Monts Mandara",
@@ -48,7 +64,7 @@ export const categories = [
   {
     id: "events",
     title: "Événements",
-    icon: <Calendar className="h-5 w-5" />,
+    iconName: "calendar",
     items: [
       {
         name: "Festival Culturel de Mokolo",

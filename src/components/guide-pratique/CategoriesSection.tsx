@@ -1,6 +1,21 @@
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { categories } from "@/data/guidePratiqueData";
-import { MapPin, Calendar } from "lucide-react";
+import { MapPin, Calendar, Hotel, Utensils, Camera } from "lucide-react";
+
+const getIconComponent = (iconName: string) => {
+  switch (iconName) {
+    case "hotel":
+      return <Hotel className="h-5 w-5" />;
+    case "utensils":
+      return <Utensils className="h-5 w-5" />;
+    case "camera":
+      return <Camera className="h-5 w-5" />;
+    case "calendar":
+      return <Calendar className="h-5 w-5" />;
+    default:
+      return null;
+  }
+};
 
 export const CategoriesSection = () => {
   return (
@@ -13,7 +28,7 @@ export const CategoriesSection = () => {
         >
           <AccordionTrigger className="px-4 hover:no-underline">
             <div className="flex items-center gap-3">
-              {category.icon}
+              {getIconComponent(category.iconName)}
               <span className="font-semibold">{category.title}</span>
             </div>
           </AccordionTrigger>
