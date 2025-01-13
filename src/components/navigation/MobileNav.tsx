@@ -1,4 +1,6 @@
 import { useLanguage } from "@/contexts/LanguageContext";
+import { Menu, X } from "lucide-react";
+import { Button } from "../ui/button";
 
 interface Props {
   isOpen: boolean;
@@ -15,11 +17,11 @@ export const MobileNav = ({ isOpen, menuItems }: Props) => {
 
   return (
     <div 
-      className="md:hidden animate-fade-in"
+      className="md:hidden fixed top-16 left-0 right-0 bg-white shadow-lg animate-fade-in"
       role="navigation"
       aria-label="Mobile Navigation"
     >
-      <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white shadow-lg">
+      <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
         {menuItems.map((item) => (
           <div 
             key={item.trigger} 

@@ -9,7 +9,18 @@ interface SearchBarProps {
 export const SearchBar = ({ showSearch }: SearchBarProps) => {
   const { t } = useLanguage();
 
-  if (!showSearch) return null;
+  if (!showSearch) {
+    return (
+      <Button
+        variant="ghost"
+        size="icon"
+        className="text-gray-600"
+        aria-label="Toggle search"
+      >
+        <Search className="h-5 w-5" />
+      </Button>
+    );
+  }
 
   return (
     <div 
