@@ -66,7 +66,7 @@ export const Footer = () => {
           <div className="space-y-4">
             <h3 className="text-lg md:text-xl font-bold">Signalement</h3>
             <p className="text-sm md:text-base">
-              Vous soupçonnez une fraude municipale, un gaspillage ou un abus ? Signalez-le au bureau de l'inspecteur général de la commune.
+              Vous soupçonnez une fraude municipale, un gaspillage ou un abus ? Signalez-le au Secrétaire Général de la commune.
             </p>
           </div>
         </div>
