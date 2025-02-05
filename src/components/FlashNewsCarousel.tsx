@@ -19,13 +19,6 @@ const flashNewsData = [
     description: "Bienvenue au nouveau marché moderne de Mokolo.",
     date: "2024-03-14",
     image: "/lovable-uploads/4989d274-8b19-4de0-ac53-9bc274223cce.png"
-  },
-  {
-    id: 3,
-    title: "Distribution des Paquets Minimum",
-    description: "Le maire de la commune de Mokolo a procédé ce jour à la remise des paquets minimum à 159 écoles primaires du ressort de sa commune.",
-    date: "2024-03-15",
-    image: "/lovable-uploads/b657d5ff-6054-4a64-8750-bd0d0ae30d4a.png"
   }
 ];
 

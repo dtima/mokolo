@@ -5,19 +5,18 @@ import { format } from "date-fns";
 const flashNewsData = [
   {
     id: 1,
-    title: "Inauguration du nouveau marché",
-    description: "Le maire inaugure le nouveau marché central de Mokolo",
-    date: "2024-03-15",
-    image: "/lovable-uploads/cabc010a-8d06-44b3-81fe-d65c1ec580e9.png"
+    title: "Budget 2023",
+    description: "Le budget de l'exercice 2023 de la commune de Mokolo, examiné et adopté ce 13 décembre 2022 par 57 conseillers municipaux sur les 61 que compte cette municipalité s'élève à la somme de 1 191 730 000 francs Cfa contre 1 476 575 813 francs Cfa pour l'exercice précédent.",
+    date: "2022-12-13",
+    image: "/lovable-uploads/b2b66311-2015-4048-b48f-ceb3c5d7e4f3.png"
   },
   {
     id: 2,
-    title: "Campagne de vaccination",
-    description: "Lancement d'une campagne de vaccination gratuite",
+    title: "Nouveau Marché Moderne",
+    description: "Bienvenue au nouveau marché moderne de Mokolo.",
     date: "2024-03-14",
-    image: "/lovable-uploads/cc71449f-908f-4f00-a2c5-0401461e5801.png"
-  },
-  // Add more flash news items here
+    image: "/lovable-uploads/4989d274-8b19-4de0-ac53-9bc274223cce.png"
+  }
 ];
 
 export default function FlashNews() {
