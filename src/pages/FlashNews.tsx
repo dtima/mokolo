@@ -1,6 +1,9 @@
 import { useLanguage } from "@/contexts/LanguageContext";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { useNavigate } from "react-router-dom";
 import { format } from "date-fns";
+import { ArrowLeft } from "lucide-react";
 
 const flashNewsData = [
   {
@@ -21,10 +24,21 @@ const flashNewsData = [
 
 export default function FlashNews() {
   const { t } = useLanguage();
+  const navigate = useNavigate();
 
   return (
-    <div className="container mx-auto py-8">
-      <h1 className="text-3xl font-bold mb-8">Flash Info</h1>
+    <div className="container mx-auto py-8 px-4">
+      <div className="flex items-center justify-between mb-8">
+        <h1 className="text-3xl font-bold">Flash Info</h1>
+        <Button 
+          variant="outline" 
+          onClick={() => navigate("/")}
+          className="flex items-center gap-2 hover:bg-cameroon-green hover:text-white transition-colors"
+        >
+          <ArrowLeft className="h-4 w-4" />
+          Retour à l'accueil
+        </Button>
+      </div>
       <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
         {flashNewsData.map((news) => (
           <Card key={news.id} className="overflow-hidden hover:shadow-lg transition-shadow">
